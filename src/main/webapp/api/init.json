@@ -18,14 +18,14 @@
       "icon": "fa fa-address-book",
       "child": [
         {
-          "title": "任务中心",
+          "title": "活动中心",
           "href": "",
           "icon": "fa fa-calendar",
           "target": "_self",
           "child": [
             {
-              "title": "任务列表",
-              "href": "page/table.html",
+              "title": "活动列表",
+              "href": "lottery/activity.html",
               "icon": "fa fa-list-alt",
               "target": "_self"
             }
