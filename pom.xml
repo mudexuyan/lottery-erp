@@ -98,7 +98,7 @@
     </dependencies>
 
     <build>
-        <finalName>Lottery-ERP</finalName>
+        <finalName>Lottery-Erp</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
