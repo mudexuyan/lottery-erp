@@ -7,6 +7,7 @@ import cn.itedus.lottery.erp.infrastructure.common.EasyResult;
 import cn.itedus.lottery.rpc.activity.deploy.ILotteryActivityDeploy;
 import cn.itedus.lottery.rpc.activity.deploy.req.ActivityPageReq;
 import cn.itedus.lottery.rpc.activity.deploy.res.ActivityRes;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.stereotype.Service;
 
@@ -20,7 +21,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class ActivityServiceImpl implements IActivityService {
 
-    @Reference(interfaceClass = ILotteryActivityDeploy.class, url = "dubbo://127.0.0.1:20880")
+//    @DubboReference(interfaceClass = ILotteryActivityDeploy.class, url = "dubbo://127.0.0.1:20880")
+    @DubboReference(interfaceClass = ILotteryActivityDeploy.class)
     private ILotteryActivityDeploy activityDeploy;
 
     @Override
