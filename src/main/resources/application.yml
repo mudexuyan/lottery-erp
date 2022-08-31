@@ -1,5 +1,5 @@
 server:
-  port: 8082
+  port: 8084
 
 spring:
   mvc:
@@ -10,7 +10,7 @@ spring:
 # 设置nacos的地址（配置中心）
 nacos:
   discovery:
-    server-addr: 127.0.0.1:8848
+    server-addr: 192.168.0.108:8848
 
 # Dubbo 广播方式配置，如果调用不稳定可以修改为直连模式：https://codechina.csdn.net/KnowledgePlanet/Lottery/-/issues/1
 dubbo:
@@ -21,7 +21,7 @@ dubbo:
 #    address: N/A
 #    address: #multicast://224.5.6.7:1234
 #    address: zookeeper://127.0.0.1:2181
-    address: nacos://127.0.0.1:8848
+    address: nacos://192.168.0.108:8848
   protocol:
     name: dubbo
     port: -1
